@@ -81,3 +81,19 @@ def my_func_module(n):
 def my_func_module2(n):
   print("Hello, , " + n)
 
+
+#Inheritance
+class Country:
+ def __init__(self, name, pop_number):
+  self.name = name
+  self.pop_number = pop_number
+
+  def printcnty(self):
+    print(self.name, self.pop_number)
+
+class Country_data(Country):
+  pass
+
+x = Country_data("Mozambique", 20000)
+x.printcnty()
+
